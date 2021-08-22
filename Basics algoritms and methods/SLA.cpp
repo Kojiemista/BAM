@@ -2,17 +2,6 @@
 #include <cmath>
 using namespace std;
 
-void rootSeparation(double& left, double& right);
-double func(const double& x);
-double rootDihotomiy(const double& left, const double& right);
-double rootHord(const double& left, const double& right);
-double funcU(const double& x);
-double funcW(const double& x);
-double rootNewton(double x);
-void rootSeparationGraph(double& left, double& right);
-double funcDerivative(const double& x);
-double rootIteration(double x);
-
 double func(const double& x)
 {
 	return (3 * x * x * x * x + 4 * x * x * x - 12 * x * x - 5);
@@ -119,6 +108,7 @@ void rootSeparationGraph(double& left, double& right)
 
 void dialogSLA()
 {
+	cout << "\t\t\t\t\t\t**Simple linear algebra**\n\n";
 	double left, right, dihotomiy, hord, newton, iteration;
 	rootSeparation(left, right);
 	dihotomiy = rootDihotomiy(left, right);

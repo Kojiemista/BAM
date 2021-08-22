@@ -1,14 +1,14 @@
 ﻿#include <iostream>
 #include "SLA.h"
-#include <string>
+#include "HUF.h"
 using namespace std;
 
-void dialog()
+void dialogMain()
 {
-	void (*listOfMethods[10])() { dialogSLA, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL };
+	void (*listOfMethods[10])() { dialogSLA, dialogHUF, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL };
 	cout << "Введите номер задания: \n"
 		<< "\nПростые линейные уравнения \t 1"
-		<< "\nПростые линейные уравнения \t 2"
+		<< "\nЖадный алгоритм Хаффмана \t 2"
 		<< "\nПростые линейные уравнения \t 3"
 		<< "\nПростые линейные уравнения \t 4"
 		<< "\nПростые линейные уравнения \t 5"
@@ -29,7 +29,7 @@ void dialog()
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	dialog();
+	dialogMain();
 	return 0;
 }
 

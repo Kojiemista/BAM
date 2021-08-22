@@ -74,8 +74,8 @@ double rootIteration(double x)
 	do {
 		tmpF = tmp * func(x);
 		x -= tmp * func(x);
-	} while (tmpF > 0.001);
-	return x;
+	} while (fabs(tmpF) > 0.001);
+	return x - tmpF;
 }
 
 void rootSeparationGraph(double& left, double& right)

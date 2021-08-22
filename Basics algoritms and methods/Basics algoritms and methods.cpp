@@ -1,13 +1,14 @@
 ﻿#include <iostream>
 #include "SLA.h"
 #include "HUF.h"
+#include "ZAG.h"
 using namespace std;
 
 void dialogMain()
 {
 	void (*listOfMethods[26])() 
 	{	
-		dialogSLA, dialogHUF, NULL, NULL, NULL, 
+		dialogSLA, dialogHUF, dialogZAG, NULL, NULL, 
 		NULL, NULL, NULL, NULL, NULL, 
 		NULL, NULL, NULL, NULL, NULL, 
 		NULL, NULL, NULL, NULL, NULL, 

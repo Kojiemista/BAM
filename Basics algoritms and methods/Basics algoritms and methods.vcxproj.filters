@@ -24,12 +24,18 @@
     <ClCompile Include="HUF.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="ZAG.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SLA.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="HUF.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAG.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

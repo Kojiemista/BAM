@@ -5,19 +5,18 @@ using namespace std;
 
 void dialogMain()
 {
-	void (*listOfMethods[10])() { dialogSLA, dialogHUF, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL };
-	cout << "Введите номер задания: \n"
-		<< "\nПростые линейные уравнения \t 1"
-		<< "\nЖадный алгоритм Хаффмана \t 2"
-		<< "\nПростые линейные уравнения \t 3"
-		<< "\nПростые линейные уравнения \t 4"
-		<< "\nПростые линейные уравнения \t 5"
-		<< "\nПростые линейные уравнения \t 6"
-		<< "\nПростые линейные уравнения \t 7"
-		<< "\nПростые линейные уравнения \t 8"
-		<< "\nПростые линейные уравнения \t 9"
-		<< "\nПростые линейные уравнения \t 10\n"
-		<< "\n№: ";
+	void (*listOfMethods[26])() 
+	{	
+		dialogSLA, dialogHUF, NULL, NULL, NULL, 
+		NULL, NULL, NULL, NULL, NULL, 
+		NULL, NULL, NULL, NULL, NULL, 
+		NULL, NULL, NULL, NULL, NULL, 
+		NULL, NULL, NULL, NULL, NULL, NULL
+	};
+	cout	<< "Введите номер задания: \n"
+			<< "\nПростые линейные уравнения \t 1"
+			<< "\nЖадный алгоритм Хаффмана \t 2"
+			<< "\n№: ";
 	short tmp;
 	cin >> tmp;
 	--tmp;
